@@ -1,18 +1,14 @@
 package com.example.springredditclone.dto;
 
+import com.example.springredditclone.model.VoteType;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class SubredditDto {
-
-    private Long id;
-    private String name;
-    private String description;
-    private Integer numberOfPosts;
+public class VoteDto {
+    private VoteType voteType;
+    private Long postId;
 }

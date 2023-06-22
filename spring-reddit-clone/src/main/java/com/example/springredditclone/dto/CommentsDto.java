@@ -1,2 +1,19 @@
-package com.example.springredditclone.dto;public class CommentsDto {
+package com.example.springredditclone.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.Instant;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CommentsDto {
+
+    private Long id;
+    private Long postId;
+    private Instant createdDate;
+    private String text;
+    private String username;
 }
